@@ -1,4 +1,4 @@
-# CSAPP Labs Workspace 🧠💻
+# 🧠💻CSAPP Labs Workspace
 
 This repository contains local work for the CMU **Computer Systems: A Programmer's Perspective (CSAPP)** labs.
 Each lab is organized in its own directory and can be built and tested independently.
@@ -11,20 +11,23 @@ The goal of this workspace is to provide a single place to:
 - Build and debug labs in a consistent environment
 - Track progress across assignments
 
-## 🗂️Repository Layout
+## 🗂️Repo Layout
 
-- `datalab/` - Data Lab
-- `bomb/` - Bomb Lab
-- `attacklab/` - Attack Lab
-- `cachelab/` - Cache Lab
-- `malloclab/` - Malloc Lab
-- `proxylab/` - Proxy Lab
-- `archlab/` - Architecture Lab
-- `perflab/` - Performance Lab
-- `buflab/` - Buffer Lab
-- `shlab/` - Shell Lab
-- `Lab-Instruction.md` - personal notes/instructions
-- `Dockerfile` - optional containerized development environment
+```
+📁 project-root
+├─ 📁 datalab/        - Data Lab
+├─ 📁 bomb/           - Bomb Lab
+├─ 📁 attacklab/      - Attack Lab
+├─ 📁 cachelab/       - Cache Lab
+├─ 📁 malloclab/      - Malloc Lab
+├─ 📁 proxylab/       - Proxy Lab
+├─ 📁 archlab/        - Architecture Lab
+├─ 📁 perflab/        - Performance Lab
+├─ 📁 buflab/         - Buffer Lab
+├─ 📁 shlab/          - Shell Lab
+├─ 📄 Lab-Instruction.md  - personal notes / instructions
+└─ 🐋 Dockerfile           - optional containerized development environment
+```
 
 ## ✅Prerequisites
 
