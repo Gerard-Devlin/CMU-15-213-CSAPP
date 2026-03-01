@@ -41,10 +41,28 @@ Recommended tools:
 
 ## 🚀Quick Start
 
-1. Open a terminal in the repository root.
-2. Enter the target lab directory.
-3. Build the lab.
-4. Run provided binaries/tests.
+Setting up docker on Windows.
+
+```powershell
+@'
+FROM ubuntu:22.04
+RUN apt-get update && apt-get install -y \
+    build-essential gdb make git valgrind \
+    python3 python3-pip \
+    gcc-multilib g++-multilib libc6-dev-i386 \
+    && rm -rf /var/lib/apt/lists/*
+WORKDIR /work
+CMD ["bash"]
+'@ | Set-Content -Encoding ascii Dockerfile
+```
+
+```powershell
+docker build -t csapp-env .
+```
+
+```powershell
+docker run --name csapp -it -v "${PWD}:/work" -w /work csapp-env
+```
 
 ## 🛠️Working on Labs
 
